@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>The Bunny Teeth Photography</title>
-  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="{{ asset('storage/style.css') }}" />
 
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -27,19 +27,19 @@
         <div class="flex justify-between h-20 items-center">
           <!-- Logo -->
           <div class="flex-shrink-0">
-            <a href="../../index.html"><img class="h-16" src="../../Images/logo.png" alt="Logo" /></a>
+            <a href="../../"><img class="h-16" src="{{ asset('storage/TheBunnyTeeth_Logo.png') }}" alt="Logo" /></a>
           </div>
 
           <!-- Navigation Links -->
           <div class="hidden md:flex items-center space-x-10 poppins-regular">
-            <a href="../../index.html" class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium">Home</a>
-            <a href="../../index.html#about"
+            <a href="../../" class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium">Home</a>
+            <a href="../../#about"
               class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium">About us</a>
             <a href="../../services"
               class="text-gray-900 border-b-2 border-amber-500 px-1 py-2 text-md font-medium">Services</a>
-            <a href="../../index.html#gallery"
+            <a href="../../#gallery"
               class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium">Gallery</a>
-            <a href="../../index.html#contact"
+            <a href="../../#contact"
               class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium">Contact Us</a>
           </div>
 
@@ -63,14 +63,14 @@
       <!-- Mobile menu -->
       <div id="mobile-menu" class="hidden md:hidden">
         <div class="px-3 pt-2 pb-3 space-y-1 poppins-regular text-center">
-          <a href="../../index.html"
+          <a href="../../"
             class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b">Home</a>
-          <a href="../../index.html#about"
+          <a href="../../#about"
             class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b">About us</a>
           <a href="../../services" class="text-gray-900 block px-3 py-2 text-base font-medium border-b">Services</a>
-          <a href="../../index.html#gallery"
+          <a href="../../#gallery"
             class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b">Gallery</a>
-          <a href="../../index.html#contact"
+          <a href="../../#contact"
             class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium">Contact Us</a>
           <a href="../../book"
             class="text-gray-100 hover:text-white bg-amber-500 rounded-sm block px-3 py-2 text-base font-medium">Book
@@ -97,34 +97,34 @@
 
     </div>
     <div class="px-5" data-aos="fade-up" data-aos-duration="1000">
-      <img class="rounded-2xl" src="../../Images/services/cakesmash/main_bg.jpg" alt="baby-bg" />
+      <img class="rounded-2xl" src="{{ asset('storage/services/servicesImg/cakesmash/main_bg.jpg') }}" alt="baby-bg" />
     </div>
 
     <div id="gallery" class="container-fluid mx-auto p-5">
       <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
         <!-- First Column -->
         <div class="col-span-1 p-0" data-aos="fade-up" data-aos-duration="1000">
-          <img class="rounded-xl w-full h-auto" src="../../Images/services/cakesmash/portrait1.jpg" alt="" />
+          <img class="rounded-xl w-full h-auto" src="{{ asset('storage/services/servicesImg/cakesmash/portrait1.jpg') }}" alt="" />
         </div>
 
         <!-- Second Column (hidden on small screens) -->
         <div class="hidden md:grid md:col-span-1 gap-3">
           <div class="p-0" data-aos="fade-up" data-aos-duration="1000">
-            <img class="rounded-xl w-full h-auto" src="../../Images/services/cakesmash/land1.jpg" alt="" />
+            <img class="rounded-xl w-full h-auto" src="{{ asset('storage/services/servicesImg/cakesmash/land1.jpg') }}" alt="" />
           </div>
           <div class="p-0" data-aos="fade-up" data-aos-duration="1000">
-            <img class="rounded-xl w-full h-auto" src="../../Images/services/cakesmash/land2.jpg" alt="" />
+            <img class="rounded-xl w-full h-auto" src="{{ asset('storage/services/servicesImg/cakesmash/land2.jpg') }}" alt="" />
           </div>
         </div>
 
         <!-- Third Column -->
         <div class="col-span-1 p-0" data-aos="fade-up" data-aos-duration="1000">
-          <img class="rounded-xl w-full h-auto" src="../../Images/services/cakesmash/portrait2.jpg" alt="" />
+          <img class="rounded-xl w-full h-auto" src="{{ asset('storage/services/servicesImg/cakesmash/portrait2.jpg') }}" alt="" />
         </div>
 
         <!-- Landscape Image (visible only on small screens) -->
         <div class="col-span-2 md:hidden" data-aos="fade-up" data-aos-duration="1000">
-          <img class="rounded-xl w-full h-auto" src="../../Images/services/cakesmash/landscape.jpg" alt="" />
+          <img class="rounded-xl w-full h-auto" src="{{ asset('storage/services/servicesImg/cakesmash/landscape.jpg') }}" alt="" />
         </div>
       </div>
     </div>
@@ -175,7 +175,7 @@
 
       <!-- Logo & Copyright -->
       <div class="mt-10 lg:-my-10 flex flex-col items-center">
-        <img class="w-32 lg:w-52" src="../../Images/logo.png" alt="Logo" />
+        <img class="w-32 lg:w-52" src="{{ asset('storage/TheBunnyTeeth_Logo.png') }}" alt="Logo" />
         <p class="text-sm lg:text-base 2xl:text-md poppins-regular text-center text-white my-2">
           Copyright @
           <span class="text-[#FFB200]">The Bunny Teeth Photography</span>. All
@@ -184,7 +184,7 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="{{ asset('storage/script.js') }}"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

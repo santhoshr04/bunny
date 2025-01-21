@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Services | The Bunny Teeth Photography</title>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="{{ asset('storage/style.css') }}" />
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Google fonts -->
@@ -26,7 +26,7 @@
         <div class="flex justify-between h-20 items-center">
           <!-- Logo -->
           <div class="flex-shrink-0">
-            <a href="../"><img class="h-16" src="../Images/logo.png" alt="Logo" /></a>
+            <a href="../"><img class="h-16" src="{{ asset('storage/TheBunnyTeeth_Logo.png') }}" alt="Logo" /></a>
           </div>
 
           <!-- Navigation Links -->
@@ -107,7 +107,7 @@
         <div class="flex justify-center lg:justify-end items-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="w-3/4 lg:w-4/6 hover01">
             <figure>
-              <a href="../services/newborn/"><img src="../Images/service1.jpg"
+              <a href="../services/newborn/"><img src="{{ asset('storage/services/services1.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}"
                   class="w-[350px] h-[330px] md:w-[500px] md:h-[500px]" alt="" /></a>
             </figure>
             <div class="flex justify-between">
@@ -137,7 +137,7 @@
         <div class="flex justify-center lg:justify-start items-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="w-3/4 lg:w-4/6 hover01">
             <figure>
-              <a href="../services/baby/"><img src="../Images/service2.jpg"
+              <a href="../services/baby/"><img src="{{ asset('storage/services/services2.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}"
                   class="w-[350px] h-[330px] md:w-[500px] md:h-[500px]" alt="" /></a>
             </figure>
             <div class="flex justify-between">
@@ -168,7 +168,7 @@
         <div class="flex justify-center lg:justify-end items-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="w-3/4 lg:w-4/6 hover01">
             <figure>
-              <a href="../services/sitter/"><img src="../Images/service3.jpg"
+              <a href="../services/sitter/"><img src="{{ asset('storage/services/services3.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}"
                   class="w-[350px] h-[330px] md:w-[500px] md:h-[500px]" alt="" /></a>
             </figure>
             <div class="flex justify-between">
@@ -198,7 +198,7 @@
         <div class="flex justify-center lg:justify-start items-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="w-3/4 lg:w-4/6 hover01">
             <figure>
-              <a href="../services/toddler/"><img src="../Images/service5.jpg"
+              <a href="../services/toddler/"><img src="{{ asset('storage/services/services4.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}"
                   class="w-[350px] h-[330px] md:w-[500px] md:h-[500px]" alt="" /></a>
             </figure>
             <div class="flex justify-between">
@@ -229,7 +229,7 @@
         <div class="flex justify-center lg:justify-end items-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="w-3/4 lg:w-4/6 hover01">
             <figure>
-              <a href="../services/family/"><img src="../Images/service4.jpg"
+              <a href="../services/family/"><img src="{{ asset('storage/services/services5.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}"
                   class="w-[350px] h-[330px] md:w-[500px] md:h-[500px]" alt="" /></a>
             </figure>
             <div class="flex justify-between">
@@ -259,7 +259,7 @@
         <div class="flex justify-center lg:justify-start items-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="w-3/4 lg:w-4/6 hover01">
             <figure>
-              <a href="../services/birthday/"><img src="../Images/service5.jpg"
+              <a href="../services/birthday/"><img src="{{ asset('storage/services/services6.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}"
                   class="w-[350px] h-[330px] md:w-[500px] md:h-[500px]" alt="" /></a>
             </figure>
             <div class="flex justify-between">
@@ -290,7 +290,7 @@
         <div class="flex justify-center lg:justify-end items-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="w-3/4 lg:w-4/6 hover01">
             <figure>
-              <a href="../services/maternity/"><img src="../Images/service4.jpg"
+              <a href="../services/maternity/"><img src="{{ asset('storage/services/services7.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}"
                   class="w-[350px] h-[330px] md:w-[500px] md:h-[500px]" alt="" /></a>
             </figure>
             <div class="flex justify-between">
@@ -320,7 +320,7 @@
         <div class="flex justify-center lg:justify-start items-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="w-3/4 lg:w-4/6 hover01">
             <figure>
-              <a href="../services/cakesmash/"><img src="../Images/service2.jpg"
+              <a href="../services/cakesmash/"><img src="{{ asset('storage/services/services8.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}"
                   class="w-[350px] h-[330px] md:w-[500px] md:h-[500px]" alt="" /></a>
             </figure>
             <div class="flex justify-between">
@@ -382,7 +382,7 @@
 
       <!-- Logo & Copyright -->
       <div class="mt-10 lg:-my-10 flex flex-col items-center">
-        <img class="w-32 lg:w-52" src="../Images/logo.png" alt="Logo" />
+        <img class="w-32 lg:w-52" src="{{ asset('storage/TheBunnyTeeth_Logo.png') }}" alt="Logo" />
         <p class="text-sm lg:text-base 2xl:text-md poppins-regular text-center text-white my-2">
           Copyright @
           <span class="text-[#FFB200]">The Bunny Teeth Photography</span>. All
@@ -391,7 +391,7 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="{{ asset('storage/script.js') }}"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
