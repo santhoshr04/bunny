@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Services | The Bunny Teeth Photography</title>
   <link rel="stylesheet" href="{{ asset('storage/style.css') }}" />
+  <link rel="icon" href="{{ asset('storage/favicon.ico') }}" type="image/x-icon">
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Google fonts -->

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="{{ asset('storage/style.css') }}" />
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="{{ asset('storage/favicon.ico') }}" type="image/x-icon">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

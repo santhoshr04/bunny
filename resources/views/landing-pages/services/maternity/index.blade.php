@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>The Bunny Teeth Photography</title>
+  <link rel="icon" href="{{ asset('storage/favicon.ico') }}" type="image/x-icon">
   <link rel="stylesheet" href="{{ asset('storage/style.css') }}" />
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
