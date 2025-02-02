@@ -4,19 +4,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore the range of professional photography services offered by The Bunny Teeth Photography. Specializing in baby, portrait, and event photography." />
+  <meta name="keywords" content="photography services, baby photography, portrait photography, event photography, professional photography, creative photography" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="The Bunny Teeth Photography" />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Services | The Bunny Teeth Photography" />
+  <meta property="og:description" content="Explore the range of professional photography services offered by The Bunny Teeth Photography. Specializing in baby, portrait, and event photography." />
+  <meta property="og:image" content="{{ asset('storage/services/servicesImg/baby/main_bg.jpg') }}" />
+  <meta property="og:url" content="{{ url()->current() }}" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@yourtwitterhandle" /> <!-- Replace with your Twitter handle -->
+  <meta name="twitter:title" content="Services | The Bunny Teeth Photography" />
+  <meta name="twitter:description" content="Explore the range of professional photography services offered by The Bunny Teeth Photography. Specializing in baby, portrait, and event photography." />
+  <meta name="twitter:image" content="{{ asset('storage/services/servicesImg/baby/main_bg.jpg') }}" />
+
   <title>Services | The Bunny Teeth Photography</title>
+
+  <!-- Canonical URL for SEO -->
+  <link rel="canonical" href="{{ url()->current() }}" />
+  
+  <!-- External Styles and Scripts -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="{{ asset('storage/style.css') }}" />
   <link rel="icon" href="{{ asset('storage/favicon.ico') }}" type="image/x-icon">
-  <!-- AOS -->
+
+  <!-- AOS (Animate On Scroll) for smooth animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Google fonts -->
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Adamina&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
-  <!-- font awesome -->
+  
+  <!-- Font Awesome for Icons -->
   <script src="https://kit.fontawesome.com/c0fbdcbfe4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -358,26 +387,28 @@
     <div class="h-full p-6 md:p-10 bg-black/90 rounded-xl">
       <div class="flex flex-col items-start md:flex-row md:justify-between md:items-start">
         <!-- Contact details -->
-        <div>
-          <p class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2 ">
-            <i class="fa-solid fa-phone mr-2"></i> +91 78249 99900
-          </p>
-          <p class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-6">
-            <i class="fa-solid fa-envelope mr-2"></i> hello@thebunnyteethphotography.com
-          </p>
-          <p class="text-sm lg:text-base xl:text-2xl poppins-regular text-white my-2">
-            <i class="fa-solid fa-location-dot mr-2"></i> 2nd Street, Ram Nagar North,<br />
-            Madipakkam, Chennai 600091.
-          </p>
+          <div>
+            <p class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2">
+                <i class="fa-solid fa-phone mr-2"></i> +91 78249 99900
+            </p>
+            <p class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-6">
+                <i class="fa-solid fa-envelope mr-2"></i>
+                hello@thebunnyteethphotography.com
+            </p>
+            <p class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2">
+                <i class="fa-solid fa-location-dot mr-2"></i> 2nd Street, Ram
+                Nagar North,<br />
+                Madipakkam, Chennai 600091.
+            </p>
         </div>
 
         <!-- Quote -->
         <div>
-          <p class="hidden md:block text-end text-base lg:text-2xl xl:text-2xl poppins-regular text-white">
-            Let's create timeless memories through the <br />
-            lens of artistry. Reach out, and weave your <br />
-            unique story into captivating frames.
-          </p>
+            <p class="hidden md:block text-end text-base lg:text-xl 2xl:text-2xl poppins-regular text-white">
+                Let's create timeless memories through the <br />
+                lens of artistry. Reach out, and weave your <br />
+                unique story into captivating frames.
+            </p>
         </div>
       </div>
 
@@ -392,6 +423,66 @@
       </div>
     </div>
   </footer>
+  <div id="preloader"></div>
+
+    <style>
+      #preloader {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      #preloader:before,
+      #preloader:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: 4px solid  #FAB510; /* Use a defined color */
+        border-radius: 50%;
+        animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+    
+      #preloader:after {
+        animation-delay: -0.5s;
+      }
+    
+      @keyframes animate-preloader {
+        0% {
+          width: 10px;
+          height: 10px;
+          top: calc(50% - 5px);
+          left: calc(50% - 5px);
+          opacity: 1;
+        }
+        100% {
+          width: 72px;
+          height: 72px;
+          top: calc(50% - 36px);
+          left: calc(50% - 36px);
+          opacity: 0;
+        }
+      }
+    </style>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const preloader = document.querySelector('#preloader');
+        if (preloader) {
+          window.addEventListener('load', () => {
+            preloader.style.transition = 'opacity 0.5s ease-out';
+            preloader.style.opacity = '0';
+            setTimeout(() => preloader.remove(), 600);
+          });
+        }
+      });
+    </script>
   <script src="{{ asset('storage/script.js') }}"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

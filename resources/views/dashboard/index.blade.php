@@ -44,7 +44,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">Desktop Landing bg 1</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">Desktop Landing bg 1 - 2560 × 1440</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('homeuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -56,7 +56,7 @@
                             onclick="document.getElementById('input-image-1').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">Desktop Landing bg 2</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">Desktop Landing bg 2 - 2560 × 1440</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('homeuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -84,7 +84,7 @@
                             onclick="document.getElementById('input-image-2').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -103,7 +103,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">Desktop Landing bg 3</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">Desktop Landing bg 3 - 2560 × 1440</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('homeuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -115,7 +115,7 @@
                             onclick="document.getElementById('input-image-3').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -131,7 +131,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">Desktop Landing bg 4</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">Desktop Landing bg 4 - 2560 × 1440</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('homeuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -143,7 +143,7 @@
                             onclick="document.getElementById('input-image-4').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -154,27 +154,27 @@
         <!-- Card 1 -->
         <div class="flex items-center p-4 border-2 border-dashed border-blue-500 rounded-lg">
             <div class="w-24 h-24 flex-shrink-0">
-                <a href="{{ asset('storage/homepage/home_bg_1.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" data-lightbox="image-1">
-                    <img src="{{ asset('storage/homepage/home_bg_1.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" 
+                <a href="{{ asset('storage/homepage/mobile/home_bg_1_mobile.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" data-lightbox="image-1">
+                    <img src="{{ asset('storage/homepage/mobile/home_bg_1_mobile.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" 
                          alt="Image Preview" 
                          class="w-full h-full object-cover rounded-lg" 
                          id="image-1">
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">Mobile Landing bg 1</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">Mobile Landing bg 1 - 1080 × 1080</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('homeuploadImage') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <input type="hidden" name="image_name" value="homepage/home_bg_1.jpg">
+                    <input type="hidden" name="image_name" value="homepage/mobile/home_bg_1_mobile.jpg">
                     <input type="file" name="image" accept="image/*" class="hidden" id="input-image-5" onchange="this.form.submit()">
                     <button type="button" 
                             class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500" 
                             onclick="document.getElementById('input-image-5').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -182,27 +182,27 @@
         <!-- Card 2 -->
         <div class="flex items-center p-4 border-2 border-dashed border-blue-500 rounded-lg">
             <div class="w-24 h-24 flex-shrink-0">
-                <a href="{{ asset('storage/homepage/home_bg_1.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" data-lightbox="image-2">
-                    <img src="{{ asset('storage/homepage/home_bg_1.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" 
+                <a href="{{ asset('storage/homepage/mobile/home_bg_2_mobile.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" data-lightbox="image-2">
+                    <img src="{{ asset('storage/homepage/mobile/home_bg_2_mobile.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" 
                          alt="Image Preview" 
                          class="w-full h-full object-cover rounded-lg" 
                          id="image-2">
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">Mobile Landing bg 2</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">Mobile Landing bg 2 - 1080 × 1080</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('homeuploadImage') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <input type="hidden" name="image_name" value="homepage/home_bg_1.jpg">
+                    <input type="hidden" name="image_name" value="homepage/mobile/home_bg_2_mobile.jpg">
                     <input type="file" name="image" accept="image/*" class="hidden" id="input-image-6" onchange="this.form.submit()">
                     <button type="button" 
                             class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500" 
                             onclick="document.getElementById('input-image-6').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -213,27 +213,27 @@
         <!-- Card 1 -->
         <div class="flex items-center p-4 border-2 border-dashed border-blue-500 rounded-lg">
             <div class="w-24 h-24 flex-shrink-0">
-                <a href="{{ asset('storage/homepage/home_bg_1.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" data-lightbox="image-1">
-                    <img src="{{ asset('storage/homepage/home_bg_1.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" 
+                <a href="{{ asset('storage/homepage/mobile/home_bg_3_mobile.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" data-lightbox="image-1">
+                    <img src="{{ asset('storage/homepage/mobile/home_bg_3_mobile.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" 
                          alt="Image Preview" 
                          class="w-full h-full object-cover rounded-lg" 
                          id="image-1">
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">Mobile Landing bg 3</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">Mobile Landing bg 3 - 1080 × 1080</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('homeuploadImage') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <input type="hidden" name="image_name" value="homepage/home_bg_1.jpg">
+                    <input type="hidden" name="image_name" value="homepage/mobile/home_bg_3_mobile.jpg">
                     <input type="file" name="image" accept="image/*" class="hidden" id="input-image-7" onchange="this.form.submit()">
                     <button type="button" 
                             class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500" 
                             onclick="document.getElementById('input-image-7').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -241,27 +241,27 @@
         <!-- Card 2 -->
         <div class="flex items-center p-4 border-2 border-dashed border-blue-500 rounded-lg">
             <div class="w-24 h-24 flex-shrink-0">
-                <a href="{{ asset('storage/homepage/home_bg_1.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" data-lightbox="image-2">
-                    <img src="{{ asset('storage/homepage/home_bg_1.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" 
+                <a href="{{ asset('storage/homepage/mobile/home_bg_4_mobile.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" data-lightbox="image-2">
+                    <img src="{{ asset('storage/homepage/mobile/home_bg_4_mobile.jpg') }}?{{ \Illuminate\Support\Str::random(6) }}" 
                          alt="Image Preview" 
                          class="w-full h-full object-cover rounded-lg" 
                          id="image-2">
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">Mobile Landing bg</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">Mobile Landing bg 4 - 1080 × 1080</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('homeuploadImage') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <input type="hidden" name="image_name" value="homepage/home_bg_1.jpg">
+                    <input type="hidden" name="image_name" value="homepage/mobile/home_bg_4_mobile.jpg">
                     <input type="file" name="image" accept="image/*" class="hidden" id="input-image-8" onchange="this.form.submit()">
                     <button type="button" 
                             class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500" 
                             onclick="document.getElementById('input-image-8').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>

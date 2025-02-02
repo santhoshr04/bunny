@@ -4,23 +4,50 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0000" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Book your dream photoshoot at The Bunny Teeth Photography. Let us help you capture unforgettable moments with our professional photography services. Secure your spot today!" />
+    <meta name="keywords" content="photoshoot booking, professional photographer, photography services, book a photoshoot, photography studio, photo session booking, dream photoshoot" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="The Bunny Teeth Photography" />
+  
+    <!-- Open Graph Meta Tags (For social sharing) -->
+    <meta property="og:title" content="Book Your Photoshoot | The Bunny Teeth Photography" />
+    <meta property="og:description" content="Book your dream photoshoot with The Bunny Teeth Photography. Secure your session today and let us capture beautiful, unforgettable moments." />
+    <meta property="og:image" content="{{ asset('storage/homepage/home_bg_1.jpg') }}" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:type" content="website" />
+  
+    <!-- Twitter Card Meta Tags (For Twitter Sharing) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@yourtwitterhandle" /> <!-- Replace with your Twitter handle -->
+    <meta name="twitter:title" content="Book Your Photoshoot | The Bunny Teeth Photography" />
+    <meta name="twitter:description" content="Book your photoshoot at The Bunny Teeth Photography and capture those perfect moments that you'll cherish forever." />
+    <meta name="twitter:image" content="{{ asset('storage/homepage/home_bg_1.jpg') }}" />
+  
+    <title>Book Your Photoshoot | The Bunny Teeth Photography</title>
+  
+    <!-- Canonical URL for SEO -->
+    <link rel="canonical" href="{{ url()->current() }}" />
+  
+    <!-- External Styles and Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>The Bunny Teeth Photography</title>
     <link rel="stylesheet" href="{{ asset('storage/style.css') }}" />
     <link rel="icon" href="{{ asset('storage/favicon.ico') }}" type="image/x-icon">
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <!-- Google fonts -->
+  
+    <!-- AOS (Animate On Scroll) for smooth animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Adamina&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
-    <!-- font awesome -->
+      href="https://fonts.googleapis.com/css2?family=Adamina&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+  
+    <!-- Font Awesome for Icons -->
     <script src="https://kit.fontawesome.com/c0fbdcbfe4.js" crossorigin="anonymous"></script>
-</head>
+</head>  
 
 <body class="custom-scrollbar" style="height: 400px; overflow-y: auto;">
     <header>
@@ -240,6 +267,106 @@
         </div>
 
     </main>
+    <footer class="p-2 mt-5 lg:mt-10">
+        <div class="h-full p-6 md:p-10 bg-black/90 rounded-xl">
+          <div class="flex flex-col items-start md:flex-row md:justify-between md:items-start">
+            <!-- Contact details -->
+            <div>
+              <p class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2">
+                  <i class="fa-solid fa-phone mr-2"></i> +91 78249 99900
+              </p>
+              <p class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-6">
+                  <i class="fa-solid fa-envelope mr-2"></i>
+                  hello@thebunnyteethphotography.com
+              </p>
+              <p class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2">
+                  <i class="fa-solid fa-location-dot mr-2"></i> 2nd Street, Ram
+                  Nagar North,<br />
+                  Madipakkam, Chennai 600091.
+              </p>
+          </div>
+    
+          <!-- Quote -->
+          <div>
+              <p class="hidden md:block text-end text-base lg:text-xl 2xl:text-2xl poppins-regular text-white">
+                  Let's create timeless memories through the <br />
+                  lens of artistry. Reach out, and weave your <br />
+                  unique story into captivating frames.
+              </p>
+          </div>
+          </div>
+    
+          <!-- Logo & Copyright -->
+          <div class="mt-10 lg:-my-10 flex flex-col items-center">
+            <img class="w-32 lg:w-52" src="{{ asset('storage/TheBunnyTeeth_Logo.png') }}" alt="Logo" />
+            <p class="text-sm lg:text-base 2xl:text-md poppins-regular text-center text-white my-2">
+              Copyright @
+              <span class="text-[#FFB200]">The Bunny Teeth Photography</span>. All
+              Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    <div id="preloader"></div>
+
+    <style>
+      #preloader {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      #preloader:before,
+      #preloader:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: 4px solid  #FAB510; /* Use a defined color */
+        border-radius: 50%;
+        animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+    
+      #preloader:after {
+        animation-delay: -0.5s;
+      }
+    
+      @keyframes animate-preloader {
+        0% {
+          width: 10px;
+          height: 10px;
+          top: calc(50% - 5px);
+          left: calc(50% - 5px);
+          opacity: 1;
+        }
+        100% {
+          width: 72px;
+          height: 72px;
+          top: calc(50% - 36px);
+          left: calc(50% - 36px);
+          opacity: 0;
+        }
+      }
+    </style>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const preloader = document.querySelector('#preloader');
+        if (preloader) {
+          window.addEventListener('load', () => {
+            preloader.style.transition = 'opacity 0.5s ease-out';
+            preloader.style.opacity = '0';
+            setTimeout(() => preloader.remove(), 600);
+          });
+        }
+      });
+    </script>
 
 
     <script src="https://web3forms.com/client/script.js" async defer></script>

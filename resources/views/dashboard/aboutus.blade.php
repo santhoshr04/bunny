@@ -31,7 +31,7 @@
 
 @section('content')
 <div class="space-y-4">
-    {{-- ABOUT US START HERE --}}
+    {{-- About us 1080 × 1600 - START HERE --}}
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <!-- Card 1 -->
         <div class="flex items-center p-4 border-2 border-dashed border-blue-500 rounded-lg">
@@ -44,7 +44,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">About Us 1</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">About us 1080 × 1600 - 1</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('aboutusuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -56,7 +56,7 @@
                             onclick="document.getElementById('input-image-1').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">About Us 2</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">About us 1080 × 1600 - 2</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('aboutusuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -84,7 +84,7 @@
                             onclick="document.getElementById('input-image-2').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -103,7 +103,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">About Us 3</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">About us 1080 × 1600 - 3</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('aboutusuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -115,7 +115,7 @@
                             onclick="document.getElementById('input-image-3').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -131,7 +131,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">About Us 4</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">About us 1080 × 1600 - 4</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('aboutusuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -143,7 +143,7 @@
                             onclick="document.getElementById('input-image-4').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -162,7 +162,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">About Us 5</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">About us 1080 × 1600 - 5</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('aboutusuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -174,7 +174,7 @@
                             onclick="document.getElementById('input-image-5').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -190,7 +190,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">About Us 6</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">About us 1080 × 1600 - 6</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('aboutusuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -202,7 +202,7 @@
                             onclick="document.getElementById('input-image-6').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -221,7 +221,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">About Us 7</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">About us 1080 × 1600 - 7</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('aboutusuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -233,7 +233,7 @@
                             onclick="document.getElementById('input-image-7').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
@@ -249,7 +249,7 @@
                 </a>
             </div>
             <div class="flex-1 pl-4">
-                <p class="text-lg font-medium text-gray-900 dark:text-white">About Us 8</p>
+                <p class="text-lg font-medium text-gray-900 dark:text-white">About us 1080 × 1600 - 8</p>
             </div>
             <div class="text-right">
                 <form action="{{ route('aboutusuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -261,12 +261,12 @@
                             onclick="document.getElementById('input-image-8').click();">
                         Upload
                     </button>
-                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                    <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
                 </form>
             </div>
         </div>
     </div>
-    {{-- ABOUT US END HERE --}}
+    {{-- About us 1080 × 1600 - END HERE --}}
 
     {{-- TESTIMONIALS START HERE --}}
     <div class="text-center p-4">
@@ -282,7 +282,7 @@
             </a>
         </div>
         <div class="flex-1 pl-4">
-            <p class="text-lg font-medium text-gray-900 dark:text-white">About Us 8</p>
+            <p class="text-lg font-medium text-gray-900 dark:text-white">TESTIMONIALS 1080 × 1600</p>
         </div>
         <div class="text-right">
             <form action="{{ route('aboutusuploadImage') }}" method="POST" enctype="multipart/form-data">
@@ -294,7 +294,7 @@
                         onclick="document.getElementById('input-image-9').click();">
                     Upload
                 </button>
-                <p class="text-sm text-gray-500 mt-2">Supports: JPG, JPEG, PNG | Max: 1 MB</p>
+                <p class="text-sm text-gray-500 mt-2">Supports: JPG, Webp, PNG | Max: 1 MB</p>
             </form>
         </div>
     </div>

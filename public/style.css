@@ -1,0 +1,239 @@
+html{
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Vertical scrollbar width */
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light background color for the scrollbar track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar thumb color */
+  border-radius: 10px;
+  border: 2px solid transparent; /* Adds padding inside the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+/* Styling for the "Go to Top" button */
+.go-to-top-btn {
+  position: fixed;
+  bottom: 20px; /* Position the button 20px from the bottom */
+  right: 20px;  /* Position the button 20px from the right */
+  background-color: #FFD700; /* Yellow color */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Circular shape */
+  padding: 15px;
+  font-size: 24px; /* Make the arrow larger */
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: opacity 0.3s, transform 0.3s; /* Smooth transition */
+  opacity: 0; /* Initially hidden */
+  z-index: 1000; /* Make sure it is on top */
+}
+
+/* Show the button when scrolling down */
+.go-to-top-btn.show {
+  opacity: 1; /* Make the button visible */
+  transform: translateY(0); /* Ensure it's in the correct position */
+}
+
+/* Hover effect for the button */
+.go-to-top-btn:hover {
+  background-color: #FFC300; /* Slightly darker yellow on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Ensuring proper responsiveness */
+@media screen and (max-width: 600px) {
+  .go-to-top-btn {
+    padding: 12px; /* Adjust padding for smaller screens */
+    font-size: 20px; /* Adjust font size */
+  }
+}
+
+.poppins-light {
+  font-family: 'Poppins', serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.poppins-regular {
+  font-family: 'Poppins', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: 'Poppins', serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: 'Poppins', serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: 'Poppins', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.adamina-regular {
+  font-family: 'Adamina', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.yellow-text {
+  color: #ad7901;
+}
+
+.yellow-bg {
+  background-color: #ad7901;
+}
+
+/* about us css */
+.marquee {
+  /* width: 100%; */
+  /* height: auto;
+  position: relative; */
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Add space between images */
+  animation: marquee 60s linear infinite; /* Speed of animation */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-content img {
+  flex-shrink: 0;
+}
+
+
+/* Services html code */
+.hover01 figure {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hover01 figure img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.hover01 figure:hover img {
+  transform: scale(1.1);
+}
+
+/* phone icon */
+.play-btn {
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(
+    rgba(255, 217, 0, 0.944) 60%,
+    rgba(142, 121, 0, 0) 62%
+  );
+  border-radius: 50%;
+  position: fixed;
+  bottom: -20px;
+  left: 45px;
+  z-index: 1000;
+  display: block;
+  margin: 100px auto;
+  box-shadow: 0px 0px rgba(255, 191, 0, 0.944);
+}
+@media (max-width: 768px) {
+  .play-btn {
+    bottom: -50px; /* Adjust position for mobile */
+    left: 20px; /* Adjust position for mobile */
+  }
+}
+/* triangle */
+.play-btn i {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  z-index: 100;
+  transition: transform 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+/* pulse wave */
+.play-btn:before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate1 2s;
+  animation: pulsate1 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgb(243, 214, 1);
+  top: -25%;
+  left: -25%;
+  background: rgba(198, 16, 0, 0);
+}
+
+@-webkit-keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75),
+      0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+  }
+}
+
+@keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75),
+      0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+  }
+}

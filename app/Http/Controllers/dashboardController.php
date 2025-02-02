@@ -32,7 +32,7 @@ class dashboardController extends Controller
     {
         // Validate the request
         $validated = $request->validate([
-            'image' => 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
+            'image' => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:1048',
             'image_name' => 'required|string',
         ]);
 
@@ -65,7 +65,7 @@ class dashboardController extends Controller
     {
         // Validate the request
         $validated = $request->validate([
-            'image' => 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
+            'image' => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:1048',
             'image_name' => 'required|string',
         ]);
 
@@ -98,7 +98,7 @@ class dashboardController extends Controller
     {
         // Validate the request
         $validated = $request->validate([
-            'image' => 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
+            'image' => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:1048',
             'image_name' => 'required|string',
         ]);
 
@@ -131,7 +131,7 @@ class dashboardController extends Controller
     {
         // Validate the request
         $validated = $request->validate([
-            'image' => 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
+            'image' => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:1048',
             'image_name' => 'required|string',
         ]);
 
@@ -163,7 +163,7 @@ class dashboardController extends Controller
     function moregalleryuploadImage(Request $request){
          // Validate the request
          $validated = $request->validate([
-            'image' => 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
+            'image' => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:1048',
             'image_name' => 'required|string',
         ]);
 
